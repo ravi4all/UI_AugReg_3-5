@@ -1,0 +1,13 @@
+/*
+h2/div - Selector
+{} - Expression
+color - Property
+red - Value
+*/
+h2 {
+    color: red;
+}
+div  {
+    height: 150px;
+    background-color: darkkhaki;
+}
