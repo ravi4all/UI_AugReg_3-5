@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*#parent p {
+            color: red;
+        }*/
+        #parent > p {
+            color: red;
+        }
+        /*#parent .class_1 p, #parent .class_2 p {
+            color: #3b5998;
+        }*/
+        #parent .secondary p{
+            color: #3b5998;
+        }
+        /*#parent + h2 {
+            color: red;
+        }*/
+        #parent ~ h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Advance Selectors</h1>
+
+<div id="parent">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+        doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+        nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+        doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+        nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+    </p>
+    <div class="class_1 secondary">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+            doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+            nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+        </p>
+        <div class="class_12">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+                doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+                nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+            </p>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+        doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+        nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+        doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+        nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+    </p>
+    <div class="class_2 secondary">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+            doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+            nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+        </p>
+        <div class="class_21">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci atque,
+                doloribus ducimus ex exercitationem facere harum id, magnam molestias nesciunt
+                nihil qui quia quod repudiandae sapiente tenetur, unde vel!
+            </p>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<h2>Heading</h2>
+<h2>Heading</h2>
+<h2>Heading</h2>
+<h2>Heading</h2>
+
+</body>
+</html>
