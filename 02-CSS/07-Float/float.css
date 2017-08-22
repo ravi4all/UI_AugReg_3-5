@@ -1,0 +1,29 @@
+#parent {
+    background-color: #99afcd;
+    border: 2px solid red;
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    background-color: #1883ba;
+}
+
+.clear {
+    clear: left;
+}
+
+.div_1 {
+    /*float: left;*/
+    /*clear: left;*/
+    background-color: #d9f3ff;
+}
+
+.div_2 {
+    background-color: #fb3958;
+}
