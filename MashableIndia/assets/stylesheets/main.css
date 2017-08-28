@@ -1,0 +1,136 @@
+body {
+    margin: 0px;
+    font-family: helvetica;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+
+#header {
+    background-color: #00AEEF;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header ul li {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#header ul li a {
+    display: block;
+    padding: 16px 8px;
+    text-decoration: none;
+    color: #fff;
+}
+#header ul li:hover {
+    background-color: #19C0FF;
+}
+
+
+#header .logo {
+    width: 23%;
+    position: relative;
+}
+#header .logo:hover{
+    background-color: #DDF0F9;
+}
+
+#header .logo a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+}
+#header .logo img {
+    width: 80%;
+}
+#header .logo:after, #main-navigation ul li:last-child a:after {
+    content: "";
+    border-top: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    right: 40px;
+    top: 45%;
+}
+
+
+
+#header .user_section {
+    width: 25%;
+    text-align: right;
+}
+#header .user_section ul li {
+    font-size: 16px;
+}
+#header .user_section ul li a {
+    padding: 14px 16px;
+}
+#header .user_section ul li i {
+    padding: 0px 5px;
+}
+
+#main-navigation {
+    width: 50%;
+}
+/*#main-navigation ul li {
+    position: relative;
+}*/
+#main-navigation ul li:last-child:hover {
+    background-color: #DDF0F9;
+}
+#main-navigation ul li:last-child a{
+    padding: 16px 30px 16px 8px;
+    position: relative;
+}
+#main-navigation ul li:last-child a:after{
+    right: 10px;
+}
+
+#main-navigation ul li .dropdown {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    background-color: #DDF0F9;
+    display: none;
+}
+#main-navigation ul li .dropdown .column {
+    padding: 15px 12px;
+    border-right: 1px solid grey;
+}
+#main-navigation ul li .dropdown .column:last-child {
+    border-right: none;
+}
+#main-navigation ul li .dropdown li{
+    display: block;
+}
+#main-navigation ul li .dropdown ul li:hover {
+    background-color: transparent;
+}
+#main-navigation ul li .dropdown ul li a{
+    color: #00aeef;
+    padding: 10px;
+}
+#main-navigation ul li .dropdown ul li a:after {
+    display: none;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
