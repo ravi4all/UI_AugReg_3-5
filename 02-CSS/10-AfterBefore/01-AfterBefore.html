@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       body p:before {
+            content: "-----";
+        }
+        body p:after {
+            content: "Read More";
+        }
+        h2 {
+            position: relative;
+        }
+        h2:after {
+            content: "";
+            background-image: url("http://www.smart-hvac.ru/img/arr_down.png");
+            height: 20px;
+            width: 30px;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>After Before</h1>
+   
+   <p>
+      <!--::before-->
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sapiente consequatur recusandae, laudantium a aliquam nobis obcaecati sequi vitae eos nemo facere neque non officiis consequuntur repellat repudiandae vel tenetur? <!--::after-->
+   </p>
+    
+    <h2>This is heading</h2>
+    <h2>This is heading</h2>
+    <h2>This is heading</h2>
+    <h2>This is heading</h2>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        .column {
+            width: 49%;
+            display: inline-block;
+        }
+        ul li {
+            display: inline-block;
+            margin: 0px 5px;
+            width: 13%;
+            text-align: center;
+            background-color: burlywood;
+            position: relative;
+        }
+        ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+        ul li:hover {
+            background-color: orange;
+        }
+        ul li:hover a {
+            color: #fff;
+        }
+        .dropdown {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            display: none;
+        }
+        .dropdown li {
+            display: block;
+            width: 100%;
+            margin: 0px;
+        }
+        li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Inline Block</h1>
+   
+   <ul>
+       <li><a href="#">Menu Item</a></li>
+       <li><a href="#">Menu Item</a></li>
+       <li>
+           <a href="#">Menu Item</a>
+           <ul class="dropdown">
+               <li><a href="#">Nested Menu</a></li>
+               <li><a href="#">Nested Menu</a></li>
+               <li><a href="#">Nested Menu</a></li>
+               <li><a href="#">Nested Menu</a></li>
+               <li><a href="#">Nested Menu</a></li>
+           </ul>
+        </li>
+       <li><a href="#">Menu Item</a></li>
+       <li><a href="#">Menu Item</a></li>
+       <li><a href="#">Menu Item</a></li>
+   </ul>
+   
+   <div id="parent">
+       <div class="column">
+           <h2>Column_1</h2>
+           <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto, ut nisi assumenda reprehenderit accusamus sed alias possimus aperiam dolore. Voluptatibus delectus inventore ex praesentium enim nisi incidunt dolor et!
+           </p>
+       </div>
+       <div class="column">
+           <h2>Column_1</h2>
+           <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto, ut nisi assumenda reprehenderit accusamus sed alias possimus aperiam dolore. Voluptatibus delectus inventore ex praesentium enim nisi incidunt dolor et!
+           </p>
+       </div>
+   </div>
+    
+</body>
+</html>
