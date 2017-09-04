@@ -1,0 +1,47 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#container {
+    height: 600px;
+    background-image: url("image_1.jpg");
+    background-size: 100% 100%;
+    transform: scale(2,2);
+    transition: 40s;
+}
+/*#container:hover {
+    transform: scale(1,1);
+}*/
+
+
+#jet_1 {
+    position: absolute;
+    top: 50px;
+    left: 10%;
+    height: 200px;
+    width: 300px;
+    background-image: url("landing-jet.png");
+    background-size: 100% 100%;
+    transform: scale(0.01, 0.01);
+    transition: 15s;
+}
+
+#container:hover ~ #jet_1 {
+    transform: scale(1,1) translate(300px, 100px) rotate3d(0,0,1,-50deg);
+}
+
+#jet_2 {
+    position: absolute;
+    transform: translate(400%,100px);
+    height: 200px;
+    width: 300px;
+    background-image: url("jet_2.png");
+    background-size: 100% 100%;
+    transition: 5s;
+    transition-delay: 5s;
+}
+
+#container:hover ~ #jet_2 {
+    transform: translate(-100%, -500px);
+}
