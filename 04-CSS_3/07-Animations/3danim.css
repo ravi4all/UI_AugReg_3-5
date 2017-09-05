@@ -1,0 +1,61 @@
+body {
+    overflow: hidden;
+}
+#container_1 {
+    width: 1350px;
+    left: 2%;
+    top: 27%;
+    position: absolute;
+    animation: anim_1 10s infinite linear;
+}
+@keyframes anim_1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(100%, 0%);
+    }
+    100% {
+        z-index: -1;
+        transform: translate(0px, 0px);
+    }
+}
+
+#earth {
+    margin: 0px 136px;
+    width: 250px;
+}
+#earth img {
+    width: 80%;
+}
+#rocket {
+    height: 100px;
+    width: 550px;
+    background-image: url("large.gif");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    left: -3%;
+    top: 29%;
+    animation: rocket 2s infinite linear;
+}
+@keyframes rocket {
+    0% {
+        transform: translate(0px, 0px) scale(0.5,0.5);
+    }
+    50% {
+        transform: translate(350px, 0px) scale(0.9, 0.9);
+    }
+    100% {
+        z-index: -1;
+        transform: translate(0px, 0px) scale(0.5,0.5);
+    }
+}
+
+#sun {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    background-image: url("Star_Birth.png");
+    background-size: 100% 100%;
+}

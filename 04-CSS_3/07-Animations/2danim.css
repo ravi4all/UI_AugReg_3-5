@@ -1,0 +1,24 @@
+#earth {
+    margin: 100px auto 0px;
+    width: 250px;
+}
+
+#rocket {
+    height: 100px;
+    width: 550px;
+    background-image: url(rocket.gif);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    left: 33%;
+    top: 29%;
+    animation: rocket 5s infinite linear;
+}
+@keyframes rocket {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
