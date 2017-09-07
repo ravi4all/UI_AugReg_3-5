@@ -1,0 +1,13 @@
+#parent {
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.column {
+    background-color: lightgray;
+    padding: 15px;
+    border: 1px solid red;
+}
