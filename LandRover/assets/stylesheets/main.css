@@ -1,0 +1,116 @@
+body {
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+
+
+/*
+Container
+*/
+
+
+/*
+Header
+*/
+#header {
+    display: flex;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+#header ul li {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#header ul li a {
+    display: block;
+}
+
+/*
+Logo
+*/
+#header .logo {
+    text-align: center;
+}
+#header .logo a {
+    display: block;
+    padding: 20px 0px 10px;
+}
+#header .logo img {
+    width: 60%;
+}
+
+#header .header-right {
+    width: 100%;
+    border-left: 1px solid #808080;
+}
+/*
+Weblinks
+*/
+#header .web-links {
+    border-bottom: 1px solid #808080;
+}
+#header .web-links ul{
+    justify-content: flex-end;
+}
+#header .web-links ul li{
+    font-size: 8px;
+    font-weight: bold;
+}
+#header .web-links ul li a {
+    text-decoration: none;
+    color: #0c121c;
+    padding: 10px;
+}
+
+
+/*
+Main-Navigation
+*/
+#main-navigation {
+    
+}
+#main-navigation ul li {
+    text-align: center;
+    width: 35%;
+    border-left: 1px solid #808080;
+}
+#main-navigation ul li a {
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 25px 8px;
+    color: #0c121c;
+}
+#main-navigation ul li:last-child {
+    width: 8%;
+}
+#main-navigation ul li:first-child {
+    border: none;
+}
