@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#topbar {
+    background-color: #F0F0E9;
+    padding: 12px 0px;
+}
+#topbar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+#topbar ul li {
+    color: #696763;
+    font-size: 12px;
+    margin: 0px 15px;
+}
+#topbar .sociable ul{
+    justify-content: flex-end;
+}
+#topbar ul li a {
+    color: #696763;
+}
+
+
+#header {
+    padding: 15px 0px;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+#header ul li {
+    margin: 0px 15px;
+}
+
+
+
+#main-nav ul li a {
+    font-size: 14px;
+    color: #696763;
+}
+#main-nav ul li:hover a {
+    color: #fe980f;
+}
+
+
+#banner .carousel-item {
+    text-align: right;
+}
