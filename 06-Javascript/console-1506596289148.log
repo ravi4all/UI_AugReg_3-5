@@ -1,0 +1,99 @@
+a = 10
+10
+b = 11
+11
+a+b
+21
+typeof(a)
+"number"
+a = 10.5
+10.5
+typeof(a)
+"number"
+a = "Hello"
+"Hello"
+typeof(a)
+"string"
+a = 'Hello'
+"Hello"
+typeof(a)
+"string"
+a = "10"
+"10"
+typeof(a)
+"string"
+b = 10
+10
+a == b
+true
+a === b
+false
+a+b
+"1010"
+c = 10
+10
+a+b+c
+"101010"
+b+c+a
+"2010"
+function show(){}
+undefined
+function show(){
+	console.log("My First Function...")
+}
+undefined
+show()
+VM295:2 My First Function...
+undefined
+var a = 10
+undefined
+b = 10
+10
+a
+10
+function add(){
+	x = 10;
+	y = 12;
+	console.log(x+y);
+}
+undefined
+add()
+VM371:4 22
+undefined
+x
+10
+function add(){
+	var x1 = 10;
+	var y1 = 12;
+	console.log(x1+y1);
+}
+undefined
+add()
+VM403:4 22
+undefined
+x1
+VM419:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM419:1
+function add(x2,y2){
+	return x2 + y2
+}
+undefined
+add(12,11)
+23
+add(12,11,13)
+23
+add(12)
+NaN
+add()
+NaN
+navigator.appCodeName
+"Mozilla"
+navigator.appName
+"Netscape"
+navigator.vendor
+"Google Inc."
+navigator.cookieEnabled
+true
+navigator.onLine
+true
