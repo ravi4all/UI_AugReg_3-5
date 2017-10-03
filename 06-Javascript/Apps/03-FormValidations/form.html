@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="custom.js"></script>
+    <style>
+        #strength {
+            height: 30px;
+            display: block;
+            transition: 1s;
+        }
+        #strength.red {
+            background-color: red;
+            width: 50px;
+        }
+        #strength.yellow {
+            background-color: yellow;
+            width: 100px;
+        }
+        #strength.green {
+            background-color: green;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Registration Form</h1>
+   
+   <table>
+       <tr>
+           <td>Enter Name</td>
+           <td><input type="text" placeholder="Enter Name" id="box_1"></td>
+           <td>
+               <span></span>
+           </td>
+       </tr>
+       <tr>
+           <td>Enter Email</td>
+           <td><input type="email" placeholder="Enter Email" id="box_2"></td>
+           <td>
+               <span></span>
+           </td>
+       </tr>
+       <tr>
+           <td>Enter Password</td>
+           <td><input type="password" placeholder="Enter Password" id="box_3"></td>
+           <td>
+               <span id="strength"></span>
+           </td>
+       </tr>
+       <tr>
+           <td>Confirm Password</td>
+           <td><input type="password" placeholder="Confrim Password" id="box_4"></td>
+           <td>
+               <span></span>
+           </td>
+       </tr>
+       <tr>
+           <td></td>
+           <td><input type="submit" value="Register"></td>
+       </tr>
+   </table>
+    
+</body>
+</html>

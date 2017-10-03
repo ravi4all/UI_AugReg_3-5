@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Key Press Events</h1>
+   
+   <!--KeyPress
+   KeyDown
+   KeyUp-->
+   
+   <!--<h2>KeyPress</h2>
+   <input type="text" placeholder="Enter Name" onkeypress="show(this)">-->
+   
+   <!--<h2>KeyDown</h2>
+   <input type="text" placeholder="Enter Name" onkeydown="show(this)">-->
+   
+   <h2>KeyUp</h2>
+   <input type="text" placeholder="Enter Name" onkeyup="show(this)">
+   <span id="output"></span>
+   
+    <script>
+        function show(obj){
+            /*alert("Event Fired....")*/
+            var userName = obj.value;
+            document.getElementById("output").innerHTML = userName;
+        }
+    </script>
+</body>
+</html>
