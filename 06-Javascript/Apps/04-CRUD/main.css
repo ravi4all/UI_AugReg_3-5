@@ -1,0 +1,20 @@
+img {
+    height: 50px;
+    width: 40px;
+    vertical-align: middle;
+}
+li {
+    padding: 10px;
+    cursor: pointer;
+}
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+li:nth-child(even) {
+    background-color: lightblue;
+}
+li.selected {
+    color: #fff;
+    background-color: red;
+    text-decoration: line-through;
+}

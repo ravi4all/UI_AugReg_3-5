@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+    <script src="../model/emp.js"></script>
+    <script src="../model/empObj.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body>
+   
+   <h1>CRUD Operations</h1>
+   
+   <table>
+       <tr>
+           <td>Enter Name</td>
+           <td><input type="text" placeholder="Enter Name" id="box_1"></td>
+       </tr>
+       <tr>
+           <td>Enter Dept</td>
+           <td><input type="text" placeholder="Enter Department" id="box_2"></td>
+       </tr>
+       <tr>
+           <td>Enter Number</td>
+           <td><input type="number" placeholder="Enter Number" id="box_3"></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td>
+               <button id="add">Add</button>
+               <button id="delete">Delete</button>
+               <button id="update">Update</button>
+               <button id="search">Search</button>
+               <button id="sort">Sort</button>
+               <button id="save">Save</button>
+               <button id="load">Load</button>
+            </td>
+       </tr>
+   </table>
+    <h2>Total Employees : </h2>
+    <h2>Selected Employees : </h2>
+    <ul id="empList">
+        
+    </ul>
+    
+</body>
+</html>
