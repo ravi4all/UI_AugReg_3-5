@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Ajax Call</h1>
+   
+   <button onclick="doAjax()">Click Here</button>
+   
+   <div id="div_1"></div>
+   
+   <script src="jquery-3.2.1.min.js"></script>
+   <script>
+       function doAjax(){
+           one();
+           two();
+           three();
+           four();
+           five();
+           six();
+       }
+       function one(){
+           console.log("One");
+       }
+       function two(){
+           console.log("two");
+       }
+       function three(){
+           console.log("three");
+       }
+       function four(){
+           $.get("data.html", function(data){
+               $("#div_1").html(data);
+               console.log("Four");
+               console.log(data);
+           });
+       }
+       function five(){
+           console.log("five");
+       }
+       function six(){
+           console.log("six");
+       }
+    </script>
+    
+</body>
+</html>

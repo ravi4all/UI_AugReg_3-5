@@ -1,0 +1,145 @@
+function outer(){}
+undefined
+function outer(){
+	function inner(){
+		pr
+	}
+}
+undefined
+function outer(){
+	function inner(){
+		print("Hello world")
+	}
+}
+undefined
+outer()
+undefined
+function outer(){
+	function inner(){
+		print("Hello world")
+	}
+	inner()
+}
+undefined
+outer()
+undefined
+outer()
+undefined
+function outer(){
+	function inner(){
+		console.log("Hello world")
+	}
+	inner()
+}
+undefined
+outer()
+VM183:3 Hello world
+undefined
+function outer(counter){
+	function inner(){
+		return counter+= 1;
+	}
+	inner()
+}
+undefined
+outer(1)
+undefined
+function outer(counter){
+	function inner(){
+		return counter+= 1;
+	}
+	return inner()
+}
+undefined
+outer(1)
+2
+outer(1)
+2
+outer(1)
+2
+function outer(counter){
+	function inner(){
+		return counter+= 1;
+	}
+	return inner
+}
+undefined
+outer(1)
+ƒ inner(){
+		return counter+= 1;
+	}
+count = outer(1)
+ƒ inner(){
+		return counter+= 1;
+	}
+count()
+2
+count()
+3
+count()
+4
+count()
+5
+count()
+6
+count()
+7
+inner()
+VM379:1 Uncaught ReferenceError: inner is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM379:1
+function(){
+	console.log("IIFE Called...")
+}
+VM417:1 Uncaught SyntaxError: Unexpected token (
+var fun = function(){
+	console.log("IIFE Called...")
+}()
+VM431:2 IIFE Called...
+undefined
+fun
+undefined
+fun()
+VM449:1 Uncaught TypeError: fun is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM449:1
+var fun = function(){
+	console.log("IIFE Called...")
+}
+undefined
+fun()
+VM453:2 IIFE Called...
+undefined
+function add(){
+	x = 12;
+	y = 11;
+	console.log(x+y);
+}
+undefined
+add()
+VM511:4 23
+undefined
+x
+12
+function add(){
+	var x1 = 12;
+	var y1 = 11;
+	console.log(x+y);
+}
+undefined
+add()
+VM538:4 23
+undefined
+function add(){
+	var x1 = 12;
+	var y1 = 11;
+	console.log(x1+y1);
+}
+undefined
+add()
+VM556:4 23
+undefined
+x1
+VM572:1 Uncaught ReferenceError: x1 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM572:1

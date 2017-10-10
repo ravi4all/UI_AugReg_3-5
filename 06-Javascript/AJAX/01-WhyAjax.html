@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Why Ajax</h1>
+   <input type="text" id="box_1" placeholder="Enter Name">
+   <button onclick="doWork()">Click Here</button>
+   
+   <h2>Hello <span id="userName"></span></h2>
+    
+    
+    <script>
+        function doWork(){
+            var box = document.getElementById("box_1");
+            var result = document.getElementById("userName");
+            
+            for(var i = 0; i<1000; i++){
+                for(var j = 0; j < 10000; j++){
+                    result.innerHTML = "Processing..."
+                }
+            }
+            
+            result.innerHTML = box.value;
+            
+        }
+    </script>
+</body>
+</html>
