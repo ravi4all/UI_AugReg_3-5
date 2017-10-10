@@ -11,6 +11,31 @@ function init(){
     
     document.getElementById("add").addEventListener("click", addEmp);
     document.getElementById("delete").addEventListener("click", deleteEmp);
+    document.getElementById("save").addEventListener("click",saveEmp);
+    document.getElementById("load").addEventListener("click",loadEmp);
+}
+
+function saveEmp(){
+    if(window.localStorage){
+        var json = JSON.stringify(obj.empList);
+        /*console.log(json);*/
+        localStorage.setItem('empData', json);
+    }
+}
+
+function loadEmp(){
+    if (window.localStorage) {
+        if (localStorage.empData){
+            var data = localStorage.getItem('empData');
+            var json = JSON.parse(data);
+            obj.empList = json;
+            printEmp();       
+        }
+    }
+}
+
+function printTotalEmp(){
+    document.getElementById("totEmp").innerHTML = obj.totalEmp();
 }
 
 function addEmp(){
@@ -25,6 +50,7 @@ function addEmp(){
     li.appendChild(img);
     ul.appendChild(li);
     li.addEventListener("click", markEmp);
+    printTotalEmp();
 }
 
 function markEmp(){
@@ -50,4 +76,5 @@ function printEmp(){
         ul.appendChild(li);
         li.addEventListener("click", markEmp);
     })
+    printTotalEmp();
 }

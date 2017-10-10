@@ -21,6 +21,14 @@ var obj = {
         this.empList = this.empList.filter(function(obj){
             return obj.selected == false;
         });
+    },
+    
+    "totalEmp" : function(){
+        var totalEmpCounter = this.empList.filter(function(obj) {
+            return obj.selected == false;
+        })
+        console.log(totalEmpCounter.length);
+        return totalEmpCounter.length;
     }
     
 }
